@@ -22,20 +22,20 @@ public class GeradorFibonacci {
         return sequencia;
     }
 
-    public String formatarSequencia(List<Integer> sequence) {
-        if (sequence.isEmpty()) return "";
+    public String formatarSequencia(List<Integer> sequencia) {
+        if (sequencia.isEmpty()) return "";
         
         StringBuilder sb = new StringBuilder();
         int qtdPorLinha = 20;  
         
-        for (int i = 0; i < sequence.size(); i++) {
+        for (int i = 0; i < sequencia.size(); i++) {
             if (i > 0) {
                 sb.append(", ");
                 if (i % qtdPorLinha == 0) {
                     sb.append("\n");  
                 }
             }
-            sb.append(sequence.get(i));
+            sb.append(sequencia.get(i));
         }
         
         return sb.toString();
